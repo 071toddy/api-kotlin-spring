@@ -135,9 +135,9 @@ O serviço do MySQL e da aplicação Spring Boot serão iniciados automaticament
 ## **Autor**
 
 **Gabriel Silva**
- Estudante de Análise e Desenvolvimento de Sistemas — Faculdade Visconde de Cairu 
-📧 [gabrielsilva.workroom@gmail.com](mailto:gabrielsilva.workroom@gmail.com)
-🌍 [GitHub](https://github.com/071toddy)
+* Estudante de Análise e Desenvolvimento de Sistemas — Faculdade Visconde de Cairu 
+* [gabrielsilva.workroom@gmail.com](mailto:gabrielsilva.workroom@gmail.com)
+* [GitHub](https://github.com/071toddy)
 
 ---
 
