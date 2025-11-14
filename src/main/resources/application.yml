@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/projetodb
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Cria/atualiza as tabelas automaticamente
+    show-sql: true        # Exibe os SQLs no console
+    properties:
+      hibernate:
+        format_sql: true  # Deixa o SQL formatado no console
+
+# Configuração do Swagger (SpringDoc)
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: API Kotlin - Gabriel Silva
+    description: API REST criada em Kotlin com Spring Boot e banco MySQL (rodando em Docker)
+    version: 1.0.0
+
+
+
+
