@@ -3,7 +3,6 @@
 Este projeto foi desenvolvido como parte de um exercício prático para construção de uma **API RESTful** utilizando **Kotlin**, **Spring Boot**, **MySQL** e **Docker**.  
 A aplicação realiza operações CRUD (Create, Read, Update, Delete) para **Produtos** e **Categorias**, com integração via **Swagger** e **Postman**.
 
----
 
 ## **Tecnologias Utilizadas**
 
@@ -14,7 +13,6 @@ A aplicação realiza operações CRUD (Create, Read, Update, Delete) para **Pro
 -  **Spring Data JPA** — Integração com o banco  
 -  **Swagger UI** — Documentação interativa da API  
 
----
 
 ##  **Estrutura das Tabelas (Script SQL)**
 
@@ -43,7 +41,6 @@ CREATE TABLE products (
 * Cada **produto** pertence a uma única categoria
 * Relação **1:N (um para muitos)**
 
----
 
 ##  **Endpoints Principais**
 
@@ -69,7 +66,6 @@ CREATE TABLE products (
 }
 ```
 
----
 
 ###  **/categories**
 
@@ -89,7 +85,6 @@ CREATE TABLE products (
 }
 ```
 
----
 
 ##  **Regras de Negócio**
 
@@ -103,7 +98,6 @@ CREATE TABLE products (
    * Permite visualizar todos os produtos pertencentes a uma categoria específica.
    * Endpoint: `GET /categories/{id}/products`
 
----
 
 ##  **Acesso ao Swagger**
 
@@ -116,7 +110,6 @@ Lá estarão disponíveis:
 * Todos os endpoints da API
 * O grupo adicional com o **Script SQL** do banco de dados
 
----
 
 ## **Executando com Docker Compose**
 
@@ -128,7 +121,6 @@ docker-compose up
 
 O serviço do MySQL e da aplicação Spring Boot serão iniciados automaticamente.
 
----
 
 ## **Autor**
 
@@ -137,7 +129,6 @@ O serviço do MySQL e da aplicação Spring Boot serão iniciados automaticament
 * [gabrielsilva.workroom@gmail.com](mailto:gabrielsilva.workroom@gmail.com)
 * [GitHub](https://github.com/071toddy)
 
----
 
 > Projeto desenvolvido para fins educacionais.
 > Tecnologia: Kotlin + Spring Boot + MySQL + Docker + Swagger UI
