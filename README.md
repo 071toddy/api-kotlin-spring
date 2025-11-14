@@ -143,5 +143,3 @@ O serviço do MySQL e da aplicação Spring Boot serão iniciados automaticament
 
 > Projeto desenvolvido para fins educacionais.
 > Tecnologia: Kotlin + Spring Boot + MySQL + Docker + Swagger UI
-
-```
