@@ -1,10 +1,12 @@
 # API Kotlin Spring Boot — Sistema de Produtos e Categorias
 
+
+## **1-Introdução**
 Este projeto foi desenvolvido como parte de um exercício prático para construção de uma **API RESTful** utilizando **Kotlin**, **Spring Boot**, **MySQL** e **Docker**.  
 A aplicação realiza operações CRUD (Create, Read, Update, Delete) para **Produtos** e **Categorias**, com integração via **Swagger** e **Postman**.
 
 
-## **Tecnologias Utilizadas**
+## **2-Tecnologias Utilizadas**
 
 -  **Kotlin** — Linguagem principal da aplicação  
 -  **Spring Boot** — Framework para criação da API  
@@ -14,7 +16,7 @@ A aplicação realiza operações CRUD (Create, Read, Update, Delete) para **Pro
 -  **Swagger UI** — Documentação interativa da API  
 
 
-##  **Estrutura das Tabelas (Script SQL)**
+## **3-Estrutura das Tabelas (Script SQL)**
 
 ```sql
 CREATE TABLE categories (
@@ -35,16 +37,16 @@ CREATE TABLE products (
 );
 ````
 
- **Relacionamento:**
+ **3.1-Relacionamento:**
 
 * Uma **categoria** pode ter **vários produtos**
 * Cada **produto** pertence a uma única categoria
 * Relação **1:N (um para muitos)**
 
 
-##  **Endpoints Principais**
+##  **4-Endpoints Principais**
 
-###  **/products**
+###  **4.1-/products**
 
 | Método                  | Descrição                     | Exemplo de uso |
 | :---------------------- | :---------------------------- | :------------- |
@@ -67,7 +69,7 @@ CREATE TABLE products (
 ```
 
 
-###  **/categories**
+###  **4.2-/categories**
 
 | Método                    | Descrição                        | Exemplo de uso  |
 | :------------------------ | :------------------------------- | :-------------- |
@@ -86,20 +88,30 @@ CREATE TABLE products (
 ```
 
 
-##  **Regras de Negócio**
+##  **5-Regras de Negócio**
 
-1. **Cálculo de desconto automático**
+1. **Listar todas as categorias com a quantidade de produtos**
 
-   * Quando um produto custa mais de **R$ 5.000**, é aplicado um **desconto de 10%** no valor total.
-   * Endpoint: `GET /products/discounted`
+   * Permite visualizar rapidamente quantos produtos existem em cada categoria — útil para relatórios e estatísticas.
+   * Endpoint: `GET /categories/with-products`
 
-2. **Listagem de produtos por categoria**
+2. **Listar categorias que não possuem produtos**
 
    * Permite visualizar todos os produtos pertencentes a uma categoria específica.
-   * Endpoint: `GET /categories/{id}/products`
+   * Endpoint: `GET /categories/empty`
+
+3. **Buscar produtos dentro de uma faixa de preço**
+
+   * Permite pesquisar produtos com base em valores definidos, útil em relatórios e filtros de busca no sistema.
+   * Endpoint: `GET /products/price-range?min=1000&max=5000`
+
+4. **Listar produtos por categoria específica**
+
+   * Facilita a exibição de produtos agrupados por categoria — útil em painéis ou seções do sistema que mostram produtos de um grupo específico..
+   * Endpoint: `GET /products/by-category/{categoryId}`
 
 
-##  **Acesso ao Swagger**
+##  **6-Acesso ao Swagger**
 
 Após rodar a aplicação, acesse:
 
@@ -111,7 +123,7 @@ Lá estarão disponíveis:
 * O grupo adicional com o **Script SQL** do banco de dados
 
 
-## **Executando com Docker Compose**
+## **7-Executando com Docker Compose**
 
 Se quiser rodar o projeto com Docker:
 
