@@ -1,4 +1,4 @@
-# API Kotlin Spring Boot — Sistema de Produtos e Categorias
+# API Kotlin Spring Boot — Sistema de Produtos
 
 
 ## **1-Introdução**
