@@ -1,6 +1,5 @@
 ## 📘 **README.md — API Kotlin Spring Boot**
 
-````markdown
 # API Kotlin Spring Boot — Sistema de Produtos e Categorias
 
 Este projeto foi desenvolvido como parte de um exercício prático para construção de uma **API RESTful** utilizando **Kotlin**, **Spring Boot**, **MySQL** e **Docker**.  
